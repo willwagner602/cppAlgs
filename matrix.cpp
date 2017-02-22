@@ -1,7 +1,7 @@
 /*********************************************************************
 ** Author: Will Wagner
-** Date: 2/1/17
-** Description:
+** Date: 2/15/17
+** Description: A structure for holding a matrix
 *********************************************************************/
 
-#include "sortAlgs.hpp"
+#include "matrix.h"

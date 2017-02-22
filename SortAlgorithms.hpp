@@ -9,7 +9,7 @@
 #define CPPALGS_SORTALGS_H
 
 
-class sortAlgorithms {
+class SortAlgorithms {
 private:
 
 public:

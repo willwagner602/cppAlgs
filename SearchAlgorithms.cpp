@@ -4,7 +4,7 @@
 ** Description: A selection of search algorithms
 *********************************************************************/
 
-#include "searchAlgorithms.hpp"
+#include "SearchAlgorithms.hpp"
 #include <limits>
 #include <iostream>
 
@@ -13,7 +13,7 @@ int MIN_INT = std::numeric_limits<int>::min();
 /*********************************************************************
 ** Description: A basic linear such function
 *********************************************************************/
-int searchAlgorithms::linearSearch(int target, int array[], int length)
+int SearchAlgorithms::linearSearch(int target, int array[], int length)
 {
     // starting at beginning of array, iterate through whole array until
     // target int is found
@@ -31,7 +31,7 @@ int searchAlgorithms::linearSearch(int target, int array[], int length)
 /*********************************************************************
 ** Description: A maximum subarray search for integers
 *********************************************************************/
-maxSubarray searchAlgorithms::findMaxSubarray(int *array, int low, int high)
+maxSubarray SearchAlgorithms::findMaxSubarray(int *array, int low, int high)
 {
     if (high <= low)
         return maxSubarray(high, low, array[low]); // base case, only one element
@@ -51,7 +51,7 @@ maxSubarray searchAlgorithms::findMaxSubarray(int *array, int low, int high)
     }
 }
 
-maxSubarray searchAlgorithms::findMaxCrossingSubarray(int *array, int low, int mid, int high)
+maxSubarray SearchAlgorithms::findMaxCrossingSubarray(int *array, int low, int mid, int high)
 {
     int maxLeft = mid;
     int maxRight = mid;

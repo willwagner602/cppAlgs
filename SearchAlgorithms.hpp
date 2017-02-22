@@ -12,7 +12,7 @@
 /*********************************************************************
 ** Description: Various search algorithms
 *********************************************************************/
-class searchAlgorithms {
+class SearchAlgorithms {
 private:
 
 public:

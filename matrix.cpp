@@ -4,4 +4,4 @@
 ** Description: A structure for holding a matrix
 *********************************************************************/
 
-#include "matrix.h"
+#include "matrix.hpp"

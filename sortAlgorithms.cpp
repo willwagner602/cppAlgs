@@ -210,7 +210,7 @@ void sortAlgorithms::maxHeapify(struct heap heap, int index)
 }
 
 /*********************************************************************
-** Description: Transforms a given integer array to a max heap
+** Description: Transforms a given integer array to a max heap in place
 *********************************************************************/
 struct heap sortAlgorithms::buildMaxHeap(int array[], int length)
 {
@@ -221,10 +221,26 @@ struct heap sortAlgorithms::buildMaxHeap(int array[], int length)
 
     for (int i = heapLength / 2; i >= 0; i--)
     {
-        std::cout << "Max heapifying " << i << std::endl;
-        printArray(array, length);
         maxHeapify(heap, i);
     }
 
     return heap;
+}
+
+/*********************************************************************
+** Description: Uses the other heap methods to sort a list
+*********************************************************************/
+struct heap sortAlgorithms::heapSort(int array[], int length)
+{
+    struct heap heap = buildMaxHeap(array, length);
+
+    for (int i = heap.heapSize; i >= 0; i--)
+    {
+        cout << "On index " << i << " with value " << heap.array[i] << " and root value " << heap.array[0] << endl;
+        int temp = heap.array[0];
+        heap.array[0] = heap.array[i];
+        heap.array[i] = temp;
+        heap.heapSize -= 1;
+        maxHeapify(heap, 0);
+    }
 }

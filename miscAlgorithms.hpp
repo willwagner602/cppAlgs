@@ -7,7 +7,7 @@
 #ifndef CPPALGS_MISCALGORITHMS_H
 #define CPPALGS_MISCALGORITHMS_H
 
-#include "matrix.h"
+#include "matrix.hpp"
 
 class miscAlgorithms {
 public:

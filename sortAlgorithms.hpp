@@ -25,6 +25,7 @@ public:
     int heapRightChild(int [], int);
     void maxHeapify(heap heap, int index);
     struct heap buildMaxHeap(int array[], int length);
+    struct heap heapSort(int array[], int length);
 };
 
 

@@ -47,8 +47,9 @@ int main() {
 
     // heap sort test
     printArray(testHeapArray3, 10);
-    heap testHeap = sort.buildMaxHeap(testHeapArray3, 10);
+    sort.heapSort(testHeapArray3, 10);
+//    heap testHeap = sort.buildMaxHeap(testHeapArray3, 10);
 
-    printHeap(testHeap, 10);
+    printArray(testHeapArray3, 10);
 
 }
